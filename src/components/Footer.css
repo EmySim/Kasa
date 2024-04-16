@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+
+.logo_footer img {
+  padding-top: 66px;
+}
+
+.footer p {
+  color: white;
+  padding-top: 28.56px;
+  padding-bottom: 29px;
+}
