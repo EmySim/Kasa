@@ -6,6 +6,11 @@ import {
 } from "react-router-dom";
 import './index.css';
 import App from './App.jsx';
+import Home from './pages/Home.jsx';
+import Appartements from './pages/Appartements.jsx';
+import Erreur from './pages/Erreur.jsx';
+import Apropos from './pages/Apropos.jsx';
+
 import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
@@ -14,9 +19,21 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/hello",
-    element: <div>hello world (ﾉ◕ヮ◕)ﾉ*:・ﾟ✧</div>
-  }
+    path: "/Home",
+    element: <Home />
+  },
+  {
+    path: "/Appartements",
+    element: <Appartements />
+  },
+  {
+    path: "/Erreur",
+    element: <Erreur />
+  },
+  {
+    path: "/APropos",
+    element: <Apropos />
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
