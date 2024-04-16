@@ -7,7 +7,7 @@ import {
 import './index.css';
 import App from './App.jsx';
 import Home from './pages/Home.jsx';
-import Appartements from './pages/Appartements.jsx';
+import Logement from './pages/Logement.jsx';
 import Erreur from './pages/Erreur.jsx';
 import Apropos from './pages/Apropos.jsx';
 
@@ -23,8 +23,8 @@ const router = createBrowserRouter([
     element: <Home />
   },
   {
-    path: "/Appartements",
-    element: <Appartements />
+    path: "/Logement",
+    element: <Logement />
   },
   {
     path: "/Erreur",

@@ -1,6 +1,6 @@
 * {
   font-family: 'Montserrat';
- /* box-shadow: 0 0 0 1px red inset*/
+ /*box-shadow: 0 0 0 1px red inset*/
 }
 
 :root {
@@ -19,20 +19,22 @@ body {
   margin: 0;
 }
 
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 100px;
 }
 
-nav {
+.nav {
   display: flex;
   gap: 57px;
+  font-size: 24px;
+  font-weight: 500;
 }
 
-nav a {
-  text-decoration: none;
+.nav a:hover {
+  text-decoration: underline;
 }
 
 main {
@@ -69,7 +71,7 @@ main {
   margin: 0 0 139px;
 }
 
-footer {
+.footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,7 +82,7 @@ footer {
   padding-top: 66px;
 }
 
-footer p {
+.footer p {
   color: white;
   padding-top: 28.56px;
   padding-bottom: 29px;
