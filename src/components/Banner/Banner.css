@@ -2,7 +2,7 @@
   position: absolute;
   content: "";
   inset: 0;
-  background-image: url("/src/assets/bannerHome.jpg"), url("/src/assets/bannerApropos.jpg");
+  /*background-image: url("/src/assets/bannerHome.jpg"), url("/src/assets/bannerApropos.jpg");*/
   border-radius: 25px;
   border: 1px solid #000;
   filter: brightness(60%);

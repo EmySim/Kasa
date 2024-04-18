@@ -3,7 +3,7 @@ import Header from '../components/Header/Header.jsx';
 import Footer from '../components/Footer/Footer.jsx';
 import {Link} from "react-router-dom"
 
-function App() {
+function Erreur() {
   return (
     <div>
       <Header />
@@ -20,4 +20,4 @@ function App() {
   );
 }
 
-export default App;
+export default Erreur;

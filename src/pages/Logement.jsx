@@ -3,7 +3,7 @@ import Header from '../components/Header/Header.jsx';
 import Footer from '../components/Footer/Footer.jsx';
 import Tag from '../components/Tag/Tag.jsx';
 
-function App() {
+function Logement() {
   return (
     <div>
       <Header />
@@ -16,4 +16,4 @@ function App() {
   );
 }
 
-export default App;
+export default Logement;
