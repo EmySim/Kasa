@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import Header from '../components/Header/Header.jsx'; 
 import Footer from '../components/Footer/Footer.jsx';
-import '../App.css';
+import Banner from '../components/Banner/Banner.jsx';
+import bannerHome from '../assets/bannerHome.jpg';
 import logementsData from '../data/logements.json'; // Importation des données du fichier logements.json
 
 function Home() {
@@ -16,6 +17,7 @@ function Home() {
   return (
     <div>
       <Header />
+      <Banner backgroundImage={bannerHome} showText={true}/>
       <Footer />
     </div>
   );

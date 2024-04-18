@@ -1,0 +1,31 @@
+.banner::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-image: url("/src/assets/bannerHome.jpg"), url("/src/assets/bannerApropos.jpg");
+  border-radius: 25px;
+  border: 1px solid #000;
+  filter: brightness(60%);
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 1240px;
+  height: 223px;
+  margin: auto;
+  color: white;
+  font-size: 48px;
+  font-weight: 700;;
+}
+
+
+/****** Mobile***********/
+@media (min-width: 400px) and (max-width: 720px) {
+}
