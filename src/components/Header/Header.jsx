@@ -12,7 +12,7 @@ function Header() {
 
       <div>
         <nav className='nav'>
-          <NavLink to = {"/Home/"}>Accueil</NavLink>
+          <NavLink to = {"/Home"}>Accueil</NavLink>
           <NavLink to = {"/Apropos/"}>A Propos</NavLink>
         </nav>
       </div>

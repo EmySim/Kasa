@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/Header/Header.jsx'; 
 import Footer from '../components/Footer/Footer.jsx';
+import './Erreur.css';
 import {Link} from "react-router-dom"
 
 function Erreur() {
@@ -11,7 +12,7 @@ function Erreur() {
       <section id="section_principale_404">
         <h1>404</h1>
         <p>Oups! La page que vous demandez n'existe pas.</p>
-        <Link to = {"/"}>Retourner sur la page d'accueil</Link>
+        <Link to = {"/Home"}>Retourner sur la page d'accueil</Link>
       </section>
     </main>
 

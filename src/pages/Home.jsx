@@ -6,6 +6,7 @@ import bannerHome from '../assets/bannerHome.jpg';
 import logementsData from '../data/logements.json'; // Importation des données du fichier logements.json
 
 function Home() {
+
   useEffect(() => {
     // Utilisation de console.log pour afficher les données du fichier logements.json
     console.log(logementsData);
