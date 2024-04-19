@@ -3,6 +3,7 @@ import Header from '../components/Header/Header.jsx';
 import Footer from '../components/Footer/Footer.jsx';
 import Banner from '../components/Banner/Banner.jsx';
 import bannerHome from '../assets/bannerHome.jpg';
+import Card from '../components/Card/Card.jsx'
 import logementsData from '../data/logements.json'; // Importation des données du fichier logements.json
 
 function Home() {
@@ -19,6 +20,11 @@ function Home() {
     <div>
       <Header />
       <Banner backgroundImage={bannerHome} showText={true}/>
+      <div className='card-container'>
+      {logementsData.map((logement, index) => (
+          <Card key={index} title={logement.title} id={logement.id} />
+        ))}
+      </div>
       <Footer />
     </div>
   );

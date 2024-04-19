@@ -3,8 +3,7 @@ import "./Collapse.css";
 import arrowDown from "../../assets/arrowDown.png";
 import arrowUp from "../../assets/arrowUp.png";
 
-function Collapse({ title, children }) {
-  // Déclaration de l'état isCollapsed avec une valeur par défaut de false
+function Collapse({ title, content }) {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   const toggleCollapse = () => {
@@ -17,7 +16,7 @@ function Collapse({ title, children }) {
           {title}
           <img src={isCollapsed ? arrowDown : arrowUp} alt="Chevron"/>
           </button>
-        {isCollapsed && <div className="collapseContent">{children}</div>}
+        {isCollapsed && <div className="collapseContent">{content}</div>}
         </div>
   );
 }

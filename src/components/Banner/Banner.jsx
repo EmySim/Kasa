@@ -1,11 +1,14 @@
 import React from 'react'
 import './Banner.css'
 
-function Banner({ backgroundImage, showText }) {
+function Banner({ backgroundImage, label }) {
   return (
-    <div className='banner' style={{ backgroundImage: `url(${backgroundImage})` }}>
-        {showText && <label>Chez vous, partout et ailleurs</label>}
-    </div>
+
+<div className='banner'>
+    <img src={backgroundImage} alt=''/> 
+    <div className='overlay'></div>
+{label &&    <h1>{label}</h1> }
+  </div>
   )
 }
 
