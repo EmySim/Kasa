@@ -1,6 +1,6 @@
 * {
   font-family: 'Montserrat';
-  /*box-shadow: 0 0 0 1px red inset*/
+  box-shadow: 0 0 0 1px red inset
 }
 
 :root {
@@ -15,4 +15,12 @@ a {
 
 body {
   margin: 0;
+}
+
+@media (min-width: 1441px) {
+  body {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0 20px; 
+  }
 }

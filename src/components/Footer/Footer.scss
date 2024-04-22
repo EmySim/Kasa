@@ -9,8 +9,25 @@
     padding-top: 28.56px;
     padding-bottom: 29px;
   }
+
+  .logo_footer img {
+    padding-top: 66px;
+  }
 }
 
-.logo_footer img {
-  padding-top: 66px;
+// Media Query pour les écrans mobiles
+@media (min-width: 400px) and (max-width: 720px) {
+  #section_principale_404 {
+    h1 {
+      font-size: 96px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    a {
+      font-size: 14px;
+    }
+  }
 }

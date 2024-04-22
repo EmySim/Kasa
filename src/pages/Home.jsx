@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import './Home.css';
 import Header from '../components/Header/Header.jsx'; 
 import Footer from '../components/Footer/Footer.jsx';
 import Banner from '../components/Banner/Banner.jsx';
@@ -19,7 +20,7 @@ function Home() {
   return (
     <div>
       <Header />
-      <Banner backgroundImage={bannerHome} showText={true}/>
+      <Banner backgroundImage={bannerHome} label="Chez vous, partout et ailleurs" />
       <div className='card-container'>
       {logementsData.map((logement, index) => (
           <Card key={index} title={logement.title} id={logement.id} />

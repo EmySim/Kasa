@@ -1,0 +1,29 @@
+/* Card.css */
+
+.card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .card a {
+    text-decoration: none;
+    color: inherit; /* Pour conserver la couleur du texte par défaut */
+  }
+  
+  .card p {
+    margin: 0;
+  }
+  
+  .card #overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond semi-transparente */
+    opacity: 0; /* Initialement invisible */
+    transition: opacity 0.3s ease; /* Transition fluide de l'opacité */
+  }
+  
+  .card:hover #overlay {
+    opacity: 1; /* Rend le fond visible au survol */
+  }
+  

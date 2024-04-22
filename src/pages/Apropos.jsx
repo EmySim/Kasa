@@ -10,7 +10,7 @@ function Apropos() {
   return (
     <div>
       <Header />
-      {/*<Banner backgroundImage={bannerApropos} label="Chez vous, partout et ailleurs" />*/}
+      {<Banner backgroundImage={bannerApropos} />}
       <div className="collapse-container">
         {valeurs.map((valeur, index) => (
           <Collapse key={index} title={valeur.title} content={valeur.content} />
