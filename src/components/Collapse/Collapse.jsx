@@ -11,13 +11,13 @@ function Collapse({ title, content }) {
   };
 
   return (
-      <div className="Collapse">
-        <button onClick={toggleCollapse} className="collapseButton">
-          {title}
-          <img src={isCollapsed ? arrowDown : arrowUp} alt="Chevron"/>
-          </button>
-        {isCollapsed && <div className="collapseContent">{content}</div>}
-        </div>
+    <div className="Collapse">
+      <div  className="topBar">
+      {title}
+        <img src={isCollapsed ? arrowDown : arrowUp} alt="Chevron"onClick={toggleCollapse} />
+      </div>
+      {isCollapsed && <div className="collapseContent">{content}</div>}
+    </div>
   );
 }
 

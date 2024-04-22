@@ -5,13 +5,11 @@ import "./Card.css";
 
 function Card({id, title}) {
   return (
-    <div>
+    <div className='Card'>
       <Link to = {`/Logement/${id}`}>
-      
-      
-      <p>{id}</p>
+       {/* <p>{id}</p> */}
+       <p className='title'>{title}</p>
       <div id='overlay'></div>
-      <p>{title}</p>
       </Link>
     </div>
   )

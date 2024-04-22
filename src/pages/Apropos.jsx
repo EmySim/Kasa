@@ -5,6 +5,7 @@ import bannerApropos from "../assets/bannerApropos.jpg";
 import Collapse from "../components/Collapse/Collapse.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import valeurs from"../data/valeurs.json";
+import './Apropos.css';
 
 function Apropos() {
   return (
