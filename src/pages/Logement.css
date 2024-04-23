@@ -37,7 +37,10 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  gap: 76px;
+}
+
+.topBar {
+  width: 582px;
 }
 
 @media (min-width: 400px) and (max-width: 720px) {

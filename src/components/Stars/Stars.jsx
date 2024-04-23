@@ -17,7 +17,7 @@ function Stars({ rating }) {
     );
   }
 
-  return <div>{stars}</div>;
+  return <div className="star-icon">{stars}</div>;
 }
 
 export default Stars;

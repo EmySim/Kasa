@@ -30,45 +30,42 @@ function Logement() {
     <div>
       <Header />
       <div className="logement-page-main-container">
-      <Gallery />
+        <Gallery />
 
-      {/*<div>ID: {id}</div> {/* Utiliser la valeur de l'ID récupérée */}
+        {/*<div>ID: {id}</div> {/* Utiliser la valeur de l'ID récupérée */}
 
-      <div className="flat-page-container">
-        
-        <div className="flat-page-container-left">
-          {logement && (
-            <>
-              <h1 className="titleLogement">{logement.title}</h1>
-              <h2 className="location">{logement.location}</h2>
-              <div className="tag-container">
-                {logement.tags.map((tag, index) => (
-                  <Tag key={index} label={tag} />
-                ))}
-              </div>
-            </>
-          )}
+        <div className="flat-page-container">
+          <div className="flat-page-container-left">
+            {logement && (
+              <>
+                <h1 className="titleLogement">{logement.title}</h1>
+                <h2 className="location">{logement.location}</h2>
+                <div className="tag-container">
+                  {logement.tags.map((tag, index) => (
+                    <Tag key={index} label={tag} />
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+
+          <div className="flat-page-container-rigth">
+            {logement && <Details host={logement.host} />}
+
+            <Stars rating={logement && parseInt(logement.rating)} />
+          </div>
         </div>
 
-        <div className="flat-page-container-rigth">
-        {logement && <Details host={logement.host} />}
-
-          <Stars rating={logement && parseInt(logement.rating)} />
-          
+        <div className="collapse-container-flat">
+          <Collapse
+            title="Description"
+            content={logement && logement.description}
+          />
+          <Collapse
+            title="Equipements"
+            content={logement && logement.equipements}
+            />
         </div>
-      </div>
-
-      <div className="collapse-container-flat">
-        <Collapse
-          title={logementsData.description}
-          content={logementsData.content}
-        />
-        <Collapse
-          title={logementsData.equipement}
-          content={logementsData.content}
-        />
-      </div>
-
       </div>
       <Footer />
     </div>
