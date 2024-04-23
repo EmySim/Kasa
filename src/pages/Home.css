@@ -1,16 +1,15 @@
 .card-container {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    width: 1240px;
-    box-sizing: border-box; 
-    gap: 50px;
-    margin-inline: auto;
-    margin-top: 43px;
-    margin-bottom: 50px;
-    padding-top: 56px;
-    padding-inline: 50px;
-    padding-bottom: 43px;
-    background-color: #F6F6F6;
-    border-radius: 25px;
-  }
-  
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: 1240px;
+  box-sizing: border-box;
+  gap: 50px;
+  margin-inline: auto;
+  margin-top: 43px;
+  margin-bottom: 50px;
+  padding-top: 56px;
+  padding-inline: 50px;
+  padding-bottom: 43px;
+  background-color: #F6F6F6;
+  border-radius: 25px;
+}/*# sourceMappingURL=Home.css.map */

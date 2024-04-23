@@ -33,7 +33,7 @@
   margin-bottom: 20px;
 }
 
-.collapse-container-flat {
+.collapse-container-flat{
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -41,4 +41,8 @@
 
 .topBar {
   width: 582px;
-}/*# sourceMappingURL=Logement.css.map */
+}
+
+@media (min-width: 400px) and (max-width: 720px) {
+  
+  }

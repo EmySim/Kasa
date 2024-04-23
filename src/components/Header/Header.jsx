@@ -8,7 +8,9 @@ function Header() {
   return (
     <div className='header'> 
         <div className='logo_header'>
+        <NavLink to="/" exact>
           <img src={logoHeader} alt="Logo En-tête"/>
+          </NavLink>
         </div>
 
       <div>
