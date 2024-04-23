@@ -33,17 +33,13 @@
   margin-bottom: 20px;
 }
 
-.collapse-container-flat{
+.collapse-container-flat {
   display: flex;
   width: 100%;
   justify-content: space-between;
   padding-bottom: 50px;
 }
 
-.topBar {
-  width: 582px;
+ul {
+  list-style-type: none;
 }
-
-@media (min-width: 400px) and (max-width: 720px) {
-  
-  }
