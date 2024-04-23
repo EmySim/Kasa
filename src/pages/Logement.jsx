@@ -34,7 +34,9 @@ function Logement() {
     <div>
       <Header />
       <div className="logement-page-main-container">
-        <Gallery />
+      {logement && (
+          <Gallery cover={logement.cover} pictures={logement.pictures} />
+        )}
 
         {/*<div>ID: {id}</div> {/* Utiliser la valeur de l'ID récupérée */}
 
