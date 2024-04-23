@@ -56,14 +56,16 @@ function Logement() {
           </div>
         </div>
 
-        <div className="collapse-container-flat">
+        <div className="collapse-container-flat" >
           <Collapse
             title="Description"
             content={logement && logement.description}
+            width="582px"
           />
           <Collapse
             title="Equipements"
             content={logement && logement.equipements}
+            width="582px"
             />
         </div>
       </div>

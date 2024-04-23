@@ -3,7 +3,7 @@ import "./Collapse.css";
 import arrowDown from "../../assets/arrowDown.png";
 import arrowUp from "../../assets/arrowUp.png";
 
-function Collapse({ title, content }) {
+function Collapse({ title, content, width }) {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   const toggleCollapse = () => {
@@ -11,7 +11,7 @@ function Collapse({ title, content }) {
   };
 
   return (
-    <div className="Collapse">
+    <div className="Collapse" style={{ width: width }}>
       <div  className="topBar">
       {title}
         <img src={isCollapsed ? arrowDown : arrowUp} alt="Chevron"onClick={toggleCollapse}  className="collapseIcon" />
