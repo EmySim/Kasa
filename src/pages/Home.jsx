@@ -5,7 +5,7 @@ import Footer from '../components/Footer/Footer.jsx';
 import Banner from '../components/Banner/Banner.jsx';
 import bannerHome from '../assets/bannerHome.jpg';
 import Card from '../components/Card/Card.jsx'
-import logementsData from '../data/logements.json'; // Importation des données du fichier logements.json
+import logementsData from '../data/logements.json';
 
 function Home() {
 
