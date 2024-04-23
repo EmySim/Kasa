@@ -14,7 +14,7 @@ function Collapse({ title, content }) {
     <div className="Collapse">
       <div  className="topBar">
       {title}
-        <img src={isCollapsed ? arrowDown : arrowUp} alt="Chevron"onClick={toggleCollapse} />
+        <img src={isCollapsed ? arrowDown : arrowUp} alt="Chevron"onClick={toggleCollapse}  className="collapseIcon" />
       </div>
       {isCollapsed && <div className="collapseContent">{content}</div>}
     </div>

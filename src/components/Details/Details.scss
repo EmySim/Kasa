@@ -1,0 +1,18 @@
+.detail-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  
+    .host-image {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  
+    .Host {
+      color: #ff6060;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
