@@ -15,8 +15,8 @@ function Header() {
 
       <div>
         <nav className='nav'>
-          <NavLink to = {"/"}  activeClassName="active">Accueil</NavLink>
-          <NavLink to = {"/Apropos/"}  activeClassName="active">A Propos</NavLink>
+          <NavLink to = {"/"}  activeclassname="active">Accueil</NavLink>
+          <NavLink to = {"/Apropos/"}  activeclassname="active">A Propos</NavLink>
         </nav>
       </div>
     </div>
