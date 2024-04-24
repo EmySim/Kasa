@@ -8,7 +8,7 @@ function Header() {
   return (
     <div className='header'> 
         <div className='logo_header'>
-        <NavLink to="/" exact>
+        <NavLink to="/">
           <img src={logoHeader} alt="Logo En-tête"/>
           </NavLink>
         </div>

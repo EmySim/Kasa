@@ -11,6 +11,9 @@
   font-size: 24px;
   font-weight: 500;
 }
-.nav.active {
+.nav a {
+  text-decoration: none;
+}
+.nav a.active, .nav a:hover {
   text-decoration: underline;
 }/*# sourceMappingURL=Header.css.map */

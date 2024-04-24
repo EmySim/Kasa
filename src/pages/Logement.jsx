@@ -9,6 +9,7 @@ import Details from "../components/Details/Details.jsx";
 import Stars from "../components/Stars/Stars.jsx";
 import Collapse from "../components/Collapse/Collapse.jsx";
 import Footer from "../components/Footer/Footer.jsx";
+import Erreur from './Erreur.jsx';
 
 function Logement() {
   const { id } = useParams();
@@ -29,6 +30,10 @@ function Logement() {
     if (!logement || !logement.equipments) return [];
     return logement.equipments;
   };
+
+  if (!logement) {
+    return <Erreur />;
+  }
 
   return (
     <div>

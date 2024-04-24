@@ -1,18 +1,17 @@
-import React from 'react'
-import {Link} from "react-router-dom"
+import React from "react";
+import { Link } from "react-router-dom";
 import "./Card.css";
 
-
-function Card({id, title}) {
+function Card({ id, title, cover }) {
   return (
-    <div className='Card'>
-      <Link to = {`/Logement/${id}`}>
-       {/* <p>{id}</p> */}
-       <p className='title'>{title}</p>
-      <div id='overlay'></div>
+    <div className="Card">
+      <Link to={`/Logement/${id}`}>
+        <img src={cover} alt="texte" />
+        <div id="overlay"></div>
+        <p className="title">{title}</p>
       </Link>
     </div>
-  )
+  );
 }
 
-export default Card
+export default Card;

@@ -23,7 +23,7 @@ function Home() {
       <Banner backgroundImage={bannerHome} label="Chez vous, partout et ailleurs" />
       <div className='card-container'>
       {logementsData.map((logement, index) => (
-          <Card key={index} title={logement.title} id={logement.id} />
+          <Card key={index} title={logement.title} id={logement.id} cover={logement.cover} />
         ))}
       </div>
       <Footer />
