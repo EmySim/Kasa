@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <div className='header'> 
-        <div className='logo_header'>
+        <div className='logo-header'>
         <NavLink to="/">
           <img src={logoHeader} alt="Logo En-tête"/>
           </NavLink>
@@ -16,7 +16,7 @@ function Header() {
       <div>
         <nav className='nav'>
           <NavLink to = {"/"}  activeclassname="active">Accueil</NavLink>
-          <NavLink to = {"/Apropos/"}  activeclassname="active">A Propos</NavLink>
+          <NavLink to = {"/a-propos/"}  activeclassname="active">A Propos</NavLink>
         </nav>
       </div>
     </div>

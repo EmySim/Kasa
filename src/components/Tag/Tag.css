@@ -1,6 +1,7 @@
 .tag {
   display: flex;
   min-width: 115px;
+  width: auto;
   height: 25px;
   justify-content: center;
   align-items: center;
@@ -9,5 +10,5 @@
   color: white;
   font-size: 14px;
   font-weight: 500;
-  padding: 0 16px;
+  padding: 0 16 px;
 }/*# sourceMappingURL=Tag.css.map */

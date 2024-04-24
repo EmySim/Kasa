@@ -9,7 +9,7 @@ function Erreur() {
     <div>
       <Header />
       <main>
-      <section id="section_principale_404">
+      <section id="section-principale-404">
         <h1>404</h1>
         <p>Oups! La page que vous demandez n'existe pas.</p>
         <Link to = {"/"}>Retourner sur la page d'accueil</Link>

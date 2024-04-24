@@ -5,7 +5,7 @@ import logoFooter from "../../assets/logoFooter.png";
 function Footer() {
   return (
     <div className="footer">
-      <div className="logo_footer">
+      <div className="logo-footer">
         <img src={logoFooter} alt="Logo Pied de page" />
       </div>
       <div>

@@ -25,7 +25,7 @@ function Logement() {
     console.log(logementsData[0].description);
     console.log(logementsData[0].title);
   }, [id]);
-  /* dans un useeffect, il faut voir si l'id existe dans mon logementdata et oui, je dois extraire de quoi fiare le titre, la description les tags ...*/
+ 
   const formatEquipments = () => {
     if (!logement || !logement.equipments) return [];
     return logement.equipments;
@@ -49,7 +49,7 @@ function Logement() {
           <div className="flat-page-container-left">
             {logement && (
               <>
-                <h1 className="titleLogement">{logement.title}</h1>
+                <h1 className="title-logement">{logement.title}</h1>
                 <h2 className="location">{logement.location}</h2>
                 <div className="tag-container">
                   {logement.tags.map((tag, index) => (
@@ -62,7 +62,6 @@ function Logement() {
 
           <div className="flat-page-container-rigth">
             {logement && <Details host={logement.host} />}
-
             <Stars rating={logement && parseInt(logement.rating)} />
           </div>
         </div>
@@ -71,7 +70,6 @@ function Logement() {
           <Collapse
             title="Description"
             content={logement && logement.description}
-            width="582px"
           />
           <Collapse
             title="Equipements"
@@ -82,7 +80,6 @@ function Logement() {
                 ))}
               </ul>
             }
-            width="582px"
           />
         </div>
       </div>

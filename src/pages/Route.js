@@ -2,7 +2,7 @@ import React from 'react';
 import Home from './Home.jsx';
 import Logement from './Logement.jsx';
 import Erreur from './Erreur.jsx';
-import Apropos from './Apropos.jsx';
+import Apropos from './a-propos.jsx';
 
 const routes = [
   {
@@ -14,7 +14,7 @@ const routes = [
     element: <Logement />
   },
   {
-    path: "/APropos",
+    path: "/a-propos",
     element: <Apropos />
   },
   {

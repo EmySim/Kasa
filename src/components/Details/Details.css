@@ -10,8 +10,11 @@
      object-fit: cover;
   border-radius: 50%;
 }
-.detail-container .Host {
+.detail-container .host {
   color: #ff6060;
   font-size: 18px;
   font-weight: 500;
+  max-width: 93px;
+  word-wrap: break-word;
+  text-align: right;
 }/*# sourceMappingURL=Details.css.map */

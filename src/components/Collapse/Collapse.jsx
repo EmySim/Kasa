@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Collapse.css";
-import arrowDown from "../../assets/arrowDown.png";
-import arrowUp from "../../assets/arrowUp.png";
+import arrowCollapse from "../../assets/arrowCollapse.png";
 
 function Collapse({ title, content, width }) {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -11,12 +10,16 @@ function Collapse({ title, content, width }) {
   };
 
   return (
-    <div className="Collapse" style={{ width: width }}>
-      <div  className="topBar">
+    <div className="collapse" style={{ width: width }}>
+      <div  className="topbar">
       {title}
-        <img src={isCollapsed ? arrowDown : arrowUp} alt="Chevron"onClick={toggleCollapse}  className="collapseIcon" />
+        <img 
+        src={arrowCollapse} 
+        alt="Chevron"onClick={toggleCollapse}  
+        className={`collapse-icon ${isCollapsed ? "collapsed" : ""}`} 
+        />
       </div>
-      {isCollapsed && <div className="collapseContent">{content}</div>}
+      {isCollapsed && <div className="collapse-content">{content}</div>}
     </div>
   );
 }

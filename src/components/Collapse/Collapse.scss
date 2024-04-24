@@ -1,9 +1,9 @@
-.Collapse {
+.collapse {
     display: flex;
     flex-direction: column;
   }
   
-  .topBar {
+  .topbar {
     display: flex;
     background-color: #FF6060;
     width: 100%;
@@ -17,7 +17,7 @@
     justify-content: space-between;
   }
   
-  .collapseButton {
+  .collapse-button {
     img {
       width: 20px;
       height: 20px;
@@ -26,10 +26,18 @@
     }
   }
   
-  .collapseContent {
+  .collapse-content {
     width: 100%;
     background-color: #F6F6F673;
     font-size: 18px;
     font-weight: 400;
     margin: 20px;
+  }
+
+  .collapse-icon {
+    transition: transform 0.3s ease;
+  }
+
+  .collapsed {
+    transform: rotate(180deg);
   }
