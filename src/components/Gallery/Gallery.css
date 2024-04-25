@@ -7,11 +7,48 @@
   margin: auto;
   padding-bottom: 30px;
 }
-.gallery-container .flat-pictures img {
+
+.gallery {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+img.flat-pictures {
   -o-object-fit: cover;
      object-fit: cover;
-  position: relative;
   width: 100%;
   height: 100%;
   border-radius: 25px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  /*transform: translateY(-50%);*/
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  transform: rotate(180deg);
+  right: 0;
+}
+
+.counter {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  z-index: 1;
 }/*# sourceMappingURL=Gallery.css.map */
