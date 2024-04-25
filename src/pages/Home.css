@@ -1,7 +1,10 @@
+/*# sourceMappingURL=Home.css.map */
+
 .card-container {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  width: 1240px;
+  max-width: 1240px;
+  width: 100%;
   box-sizing: border-box;
   gap: 50px;
   margin-inline: auto;
@@ -10,6 +13,23 @@
   padding-top: 56px;
   padding-inline: 50px;
   padding-bottom: 43px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   border-radius: 25px;
-}/*# sourceMappingURL=Home.css.map */
+}
+
+/* Tablet*/
+@media (min-width: 600px) and (max-width: 1024px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Mobile */
+@media (min-width: 480px) and (max-width: 600px) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    
+  }
+}

@@ -6,10 +6,10 @@
 .detail-container .host-image {
   width: 100px;
   height: 100px;
-  -o-object-fit: cover;
-     object-fit: cover;
+overflow: cover;
   border-radius: 50%;
 }
+
 .detail-container .host {
   color: #ff6060;
   font-size: 18px;

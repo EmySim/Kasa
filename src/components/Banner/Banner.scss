@@ -1,3 +1,5 @@
+@import "../../breakpoints.scss"; 
+
 .banner {
   display: flex;
   justify-content: center;
@@ -5,6 +7,13 @@
   position: relative;
   width: 1240px;
   height: 223px;
+  @include tablet {
+    width: 80%; // Ajustement de la largeur pour les tablettes
+  }
+
+  @include mobile {
+    width: 100%; // Ajustement de la largeur pour les mobiles
+  }
   margin: auto;
 
   .overlay {

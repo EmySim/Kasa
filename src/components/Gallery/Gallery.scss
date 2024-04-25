@@ -26,7 +26,6 @@ img.flat-pictures {
 .arrow {
   position: absolute;
   top: 50%;
-  /*transform: translateY(-50%);*/
   background: transparent;
   border: none;
   cursor: pointer;
@@ -34,12 +33,12 @@ img.flat-pictures {
 }
 
 .prev {
-  left: 0;
+  left: 2%;
 }
 
 .next {
   transform: rotate(180deg);
-  right: 0;
+  right: 2%;
 }
 
 .counter {
