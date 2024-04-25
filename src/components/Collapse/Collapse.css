@@ -1,11 +1,13 @@
 .collapse {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .topbar {
   display: flex;
-  background-color: #FF6060;
+  background-color: #ff6060;
   width: 100%;
   color: white;
   font-size: 24px;
@@ -15,6 +17,7 @@
   padding: 10px;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .collapse-button img {
@@ -24,18 +27,24 @@
   cursor: pointer;
 }
 
-.collapse-content {
-  width: 100%;
-  background-color: rgba(246, 246, 246, 0.4509803922);
-  font-size: 18px;
-  font-weight: 400;
-  margin: 20px;
-}
-
 .collapse-icon {
   transition: transform 0.3s ease;
 }
 
 .collapsed {
   transform: rotate(180deg);
+}
+
+.collapse-content {
+  width: 100%;
+  background-color: #F6F6F6;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 19px 20px;
+  transition: opacity 0.3s ease;
+  position: relative;
+}
+.collapse-content .hidden {
+  opacity: 0;
 }/*# sourceMappingURL=Collapse.css.map */
