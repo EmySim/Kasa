@@ -8,7 +8,6 @@
 .topbar {
   display: flex;
   background-color: #ff6060;
-  width: 100%;
   color: white;
   font-size: 24px;
   font-weight: 700;
@@ -17,7 +16,6 @@
   padding: 10px;
   align-items: center;
   justify-content: space-between;
-  position: relative;
 }
 
 .collapse-button img {
@@ -36,9 +34,8 @@
 }
 
 .collapse-content {
-  width: 100%;
   background-color: #F6F6F6;
-  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
   font-size: 18px;
   font-weight: 400;
   padding: 19px 20px;
