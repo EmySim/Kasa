@@ -1,10 +1,24 @@
-@import "../../breakpoints.scss"; 
+@import "../../breakpoints.scss";
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 40px 100px 50px;
+
+  @include tablet {
+    padding-top: 20px;
+    padding-bottom: 27px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  @include mobile-max-width {
+    padding-top: 20px;
+    padding-bottom: 27px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 .nav {
@@ -13,13 +27,38 @@
   font-size: 24px;
   font-weight: 500;
 
-  a{
+  @include tablet {
+    gap: 26px;
+  }
+
+  @include mobile-max-width {
+    gap: 26px;
+  }
+
+  a {
     text-decoration: none;
-    &.active, &:hover {
+
+    @include tablet {
+      gap: 12px;
+    }
+
+    @include mobile-max-width {
+      font-size: 12px;
+    }
+
+    &.active,
+    &:hover {
       text-decoration: underline;
     }
   }
-  
 
-    
+  .logo-header img {
+    @include tablet {
+      height: 46px;
+    }
+
+    @include mobile-max-width {
+      height: 46px;
+    }
+  }
 }

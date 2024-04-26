@@ -1,5 +1,4 @@
-@import "../../breakpoints.scss"; 
-
+@import "../../breakpoints.scss";
 
 #section-principale-404 {
   display: flex;
@@ -7,19 +6,37 @@
   align-items: center;
 
   h1 {
-    color: #FF6060;
+    color: #ff6060;
     font-size: 288px;
     font-weight: 700;
     line-height: 142.6%;
     margin: 139px 0;
+
+    @include tablet {
+      font-size: 100px;
+    }
+
+    @include mobile-max-width {
+      font-size: 96px;
+    }
   }
 
   p {
-    color: #FF6060;
+    color: #ff6060;
     font-size: 36px;
     font-weight: 500;
     line-height: 142.6%;
     margin: 0 0 139px;
+
+    @include tablet {
+      word-wrap: break-word;
+      font-size: 27px;
+    }
+
+    @include mobile-max-width {
+      word-wrap: break-word;
+      font-size: 18px;
+    }
   }
 
   a {
@@ -27,6 +44,13 @@
     font-weight: 500;
     line-height: 142.6%;
     margin: 0 0 139px;
+
+    @include tablet {
+      font-size: 16px;
+    }
+
+    @include mobile-max-width {
+      font-size: 14px;
+    }
   }
 }
-

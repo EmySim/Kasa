@@ -47,7 +47,7 @@
 
 
 /* Mobile */
-@media (min-width: 480px) and (max-width: 600px){
+@media (max-width: 600px){
   .card {
   width: 335px;
   height: 255px;

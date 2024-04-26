@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   position: relative;
-  width: 1240px;
+  max-width: 1240px;
   height: 415px;
   margin: auto;
   padding-bottom: 30px;

@@ -16,4 +16,15 @@
   padding-bottom: 43px;
   background-color: #F6F6F6;
   border-radius: 25px;
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  @include mobile-max-width {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
 }

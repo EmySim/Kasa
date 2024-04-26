@@ -43,7 +43,7 @@
 }
 
 /* Mobile */
-@media (min-width: 400px) and (max-width: 600px) {
+@media (max-width: 600px) {
   #section-principale-404 h1 {
     font-size: 96px;
   }

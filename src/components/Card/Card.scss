@@ -1,4 +1,4 @@
-@import "../../breakpoints.scss"; 
+@import "../../breakpoints.scss";
 
 .card {
   display: flex;
@@ -9,14 +9,19 @@
   overflow: hidden;
   background-color: #ff6060;
 
+  @include mobile-max-width {
+    width: 335px;
+    height: 255px;
+  }
+
   a {
     text-decoration: none;
   }
 
   p.title {
     position: relative;
-    margin: 0; 
-    color: white; 
+    margin: 0;
+    color: white;
     font-size: 18px;
     font-weight: 700;
     padding: 0 20px 20px;
@@ -36,7 +41,7 @@
     height: 100%;
     object-fit: cover;
     z-index: 0;
-  }  
+  }
 
   #overlay {
     position: absolute;

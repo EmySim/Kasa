@@ -1,4 +1,4 @@
-
+@import "../../breakpoints.scss"; 
 
 .collapse {
   display: flex;
@@ -18,6 +18,15 @@
   padding: 10px;
   align-items: center;
   justify-content: space-between;
+
+  @include tablet {
+    font-size: 17px;
+  }
+
+  @include mobile-max-width {
+    font-size: 13px;
+  }
+
 }
 
 .collapse-button {
@@ -39,7 +48,7 @@
 
 .collapse-content {
   background-color: #F6F6F6;
- 
+  //background-color: aqua;
   border-radius: 0 0 5px 5px;
   font-size: 18px;
   font-weight: 400;
@@ -49,6 +58,14 @@
 
   .hidden {
     opacity: 0;
+  }
+
+  @include tablet {
+    font-size: 18px;
+  }
+
+  @include mobile-max-width {
+    font-size: 12px;
   }
 
 }

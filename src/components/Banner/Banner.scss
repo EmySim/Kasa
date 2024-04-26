@@ -5,16 +5,22 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 1240px;
+  max-width: 1240px;
+  width: 100%;
   height: 223px;
+  margin: auto;
+
   @include tablet {
-    width: 80%; // Ajustement de la largeur pour les tablettes
+    width: 100%;
+    height: 111px;
+    margin-bottom: 22px;
   }
 
-  @include mobile {
-    width: 100%; // Ajustement de la largeur pour les mobiles
+  @include mobile-max-width {
+    width: 100%;
+    height: 111px;
+    margin-bottom: 22px;
   }
-  margin: auto;
 
   .overlay {
     position: absolute;

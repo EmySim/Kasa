@@ -45,3 +45,26 @@
 .collapse-content .hidden {
   opacity: 0;
 }/*# sourceMappingURL=Collapse.css.map */
+
+/* Tablet*/
+@media (min-width: 600px) and (max-width: 1024px) {
+  .topbar {
+    font-size: 17px;
+  }
+
+  .collapse-content {
+    font-size: 18px;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 600px){
+  .topbar {
+    font-size: 13px;
+  }
+
+  .collapse-content {
+    font-size: 12px;
+  }
+}

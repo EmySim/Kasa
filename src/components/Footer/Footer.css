@@ -11,16 +11,4 @@
 }
 .footer .logo-footer img {
   padding-top: 66px;
-}
-
-@media (min-width: 400px) and (max-width: 720px) {
-  #section_principale_404 h1 {
-    font-size: 96px;
-  }
-  #section_principale_404 p {
-    font-size: 18px;
-  }
-  #section_principale_404 a {
-    font-size: 14px;
-  }
 }/*# sourceMappingURL=Footer.css.map */

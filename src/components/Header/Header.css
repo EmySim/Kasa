@@ -29,12 +29,12 @@
     padding-right: 0px;
   }
 
-  .nav a {
-    font-size: 12px;
-  }
-
   .nav {
     gap: 26px;
+  }
+
+  .nav a {
+    font-size: 12px;
   }
 
   .logo-header img {
@@ -44,7 +44,7 @@
 
 
 /* Mobile */
-@media (min-width: 480px) and (max-width: 600px){
+@media (max-width: 600px){
   .header {
     padding-top: 20px;
     padding-bottom: 27px;
@@ -52,12 +52,12 @@
     padding-right: 0px;
   }
 
-  .nav a {
-    font-size: 12px;
-  }
-
   .nav {
     gap: 26px;
+  }
+
+  .nav a {
+    font-size: 12px;
   }
 
   .logo-header img {
