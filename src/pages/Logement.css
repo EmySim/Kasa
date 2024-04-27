@@ -1,5 +1,6 @@
 .logement-page-main-container {
   max-width: 1240px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -35,6 +36,7 @@
 
 .collapse-container-flat {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   padding-bottom: 50px;
   gap: 76px;
@@ -44,7 +46,7 @@ ul {
   list-style-type: none;
   margin: 0px;
   padding: 0px;
-} /*# sourceMappingURL=Logement.css.map */
+}
 
 /****** Media queries ***********/
 /* Tablet*/
@@ -53,78 +55,70 @@ ul {
     width: 100%;
     margin: 20px;
   }
-
   .flat-page-container {
     flex-direction: column;
     justify-content: space-between;
   }
-
-  .flat-page-container-rigth {
+  .flat-page-container-right {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    background-color: red;
   }
-
   .flat-page-container-left {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    background-color: red;
   }
-
   .collapse-container-flat {
     flex-direction: column;
     gap: 20px;
     padding-bottom: 0px;
     margin: 27px;
   }
-
   .title-logement {
     font-size: 27px;
     word-wrap: break-word;
   }
-
   .location {
     font-size: 16px;
   }
 }
-
 /* Mobile */
 @media (max-width: 600px) {
   .logement-page-main-container {
     width: 100%;
     margin: 20px;
   }
-
   .flat-page-container {
     flex-direction: column;
     justify-content: space-between;
   }
-
-  .flat-page-container-rigth {
+  .flat-page-container-right {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
   }
-
   .flat-page-container-left {
     display: flex;
     flex-direction: column;
+    background: blueviolet;
   }
-
   .collapse-container-flat {
     flex-direction: column;
     gap: 20px;
     margin: 27px;
     padding-bottom: 0px;
   }
-
   .title-logement {
     font-size: 18px;
     word-wrap: break-word;
   }
-
   .location {
     font-size: 14px;
   }
-}
+}/*# sourceMappingURL=Logement.css.map */

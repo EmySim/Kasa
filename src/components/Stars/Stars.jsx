@@ -6,12 +6,12 @@ import "./Stars.css";
 function Stars({ rating }) {
  
   const stars = [];
-  for (let i = 0; i < 5; i++) {
+  for (let i = 1; i <= 5; i++) {
     stars.push(
       <img
         key={i}
-        src={i < rating ? starActive : starInactive}
-        alt={i < rating ? "star-active" : "star-inactive"}
+        src={i <= rating ? starActive : starInactive}
+        alt={i <= rating ? "star-active" : "star-inactive"}
         className="star-icon"
       />
     );

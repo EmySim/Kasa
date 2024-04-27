@@ -1,20 +1,21 @@
 // Gallery.scss
-@import "../../breakpoints.scss"; 
-
-.gallery-container {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  max-width: 1240px;
-  height: 415px;
-  margin: auto;
-  padding-bottom: 30px;
-}
+@import "../../variables.scss";
 
 .gallery {
   display: flex;
   position: relative;
   width: 100%;
+
+  &-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 1240px;
+    width: 100%;
+    height: 415px;
+    margin: auto;
+    padding-bottom: 30px;
+  }
 }
 
 img.flat-pictures {
@@ -27,19 +28,23 @@ img.flat-pictures {
 .arrow {
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
   background: transparent;
   border: none;
   cursor: pointer;
   z-index: 1;
-}
 
-.prev {
-  left: 2%;
-}
+  &.prev {
+    left: 2%;
+  }
 
-.next {
-  transform: rotate(180deg);
-  right: 2%;
+  &.next {
+    right: 2%;
+
+    img {
+      transform: rotate(180deg);
+    }
+  }
 }
 
 .counter {

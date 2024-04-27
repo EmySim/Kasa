@@ -26,11 +26,6 @@ function Logement() {
     console.log(logementsData[0].title);
   }, [id]);
  
-  const formatEquipments = () => {
-    if (!logement || !logement.equipments) return [];
-    return logement.equipments;
-  };
-
   if (!logement) {
     return <Erreur />;
   }
@@ -71,16 +66,12 @@ function Logement() {
             title="Description"
             content={logement && logement.description}
           />
+
           <Collapse
             title="Equipements"
-            content={
-              <ul>
-                {formatEquipments().map((equipment, index) => (
-                  <li key={index}>{equipment}</li>
-                ))}
-              </ul>
-            }
+            content={ logement && logement.equipments}
           />
+
         </div>
       </div>
       <Footer />

@@ -1,4 +1,4 @@
-@import "../../breakpoints.scss";
+@import "../../variables.scss";
 
 .header {
   display: flex;
@@ -6,19 +6,6 @@
   align-items: center;
   padding: 40px 100px 50px;
 
-  @include tablet {
-    padding-top: 20px;
-    padding-bottom: 27px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  @include mobile-max-width {
-    padding-top: 20px;
-    padding-bottom: 27px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
 }
 
 .nav {
@@ -60,5 +47,24 @@
     @include mobile-max-width {
       height: 46px;
     }
+  }
+}
+
+@media (min-width: $small) {
+  .header {
+    padding-top: 20px;
+    padding-bottom: 27px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+}
+
+@media (min-width: $large) {
+  .header {
+    padding-top: 20px;
+    padding-bottom: 27px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
