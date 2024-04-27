@@ -55,7 +55,7 @@ function Logement() {
             )}
           </div>
 
-          <div className="flat-page-container-rigth">
+          <div className="flat-page-container-right">
             {logement && <Details host={logement.host} />}
             <Stars rating={logement && parseInt(logement.rating)} />
           </div>
