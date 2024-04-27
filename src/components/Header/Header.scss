@@ -5,7 +5,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 40px 100px 50px;
-
 }
 
 .nav {
@@ -14,38 +13,12 @@
   font-size: 24px;
   font-weight: 500;
 
-  @include tablet {
-    gap: 26px;
-  }
-
-  @include mobile-max-width {
-    gap: 26px;
-  }
-
   a {
     text-decoration: none;
-
-    @include tablet {
-      gap: 12px;
-    }
-
-    @include mobile-max-width {
-      font-size: 12px;
-    }
 
     &.active,
     &:hover {
       text-decoration: underline;
-    }
-  }
-
-  .logo-header img {
-    @include tablet {
-      height: 46px;
-    }
-
-    @include mobile-max-width {
-      height: 46px;
     }
   }
 }
@@ -57,7 +30,17 @@
     padding-left: 0px;
     padding-right: 0px;
   }
+  .nav {
+    gap: 26px;
+  }
 
+  a {
+    gap: 12px;
+  }
+
+  .logo-header img {
+    height: 46px;
+  }
 }
 
 @media (min-width: $large) {
@@ -66,5 +49,14 @@
     padding-bottom: 27px;
     padding-left: 0px;
     padding-right: 0px;
+  }
+  .nav {
+    gap: 26px;
+  }
+  a {
+    gap: 12px;
+  }
+  .logo-header img {
+    height: 46px;
   }
 }

@@ -10,7 +10,6 @@
   line-height: 142.6%;
   margin: 139px 0;
 }
-
 #section-principale-404 p {
   color: #ff6060;
   font-size: 36px;
@@ -23,38 +22,29 @@
   font-weight: 500;
   line-height: 142.6%;
   margin: 0 0 139px;
-} /*# sourceMappingURL=Erreur.css.map */
-
-/* Tablet*/
-@media (min-width: 600px) and (max-width: 1024px) {
-  #section-principale-404 h1 {
-    font-size: 100px;
-  }
-
-  #section-principale-404 p {
-    word-wrap: break-word;
-    font-size: 27px;
-  }
-
-  #section-principale-404 a {
-    font-size: 16px;
-  }
-
 }
 
-/* Mobile */
-@media (max-width: 600px) {
+@media (min-width: 576px) {
   #section-principale-404 h1 {
     font-size: 96px;
   }
-
   #section-principale-404 p {
     word-wrap: break-word;
     font-size: 18px;
   }
-
   #section-principale-404 a {
     font-size: 14px;
   }
-
 }
+@media (min-width: 992px) {
+  #section-principale-404 h1 {
+    font-size: 100px;
+  }
+  #section-principale-404 p {
+    word-wrap: break-word;
+    font-size: 27px;
+  }
+  #section-principale-404 a {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=Erreur.css.map */
