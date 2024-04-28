@@ -17,13 +17,16 @@ function Gallery({ pictures }) {
     );
   };
 
+  const isOnePicture = pictures.length === 1;
+
   return (
     <div className="gallery-container">
-
       <div className="gallery">
-        <button onClick={prevSlide} className="arrow prev">
-          <img src={arrowSlider} alt="Previous" />
-        </button>
+        {!isOnePicture && (
+          <button onClick={prevSlide} className="arrow prev">
+            <img src={arrowSlider} alt="Previous" />
+          </button>
+        )}
 
         {pictures.map((picture, index) => (
           <div
@@ -40,16 +43,19 @@ function Gallery({ pictures }) {
           </div>
         ))}
 
-        <button onClick={nextSlide} className="arrow next">
-          <img src={arrowSlider} alt="Next" />
-        </button>
+{!isOnePicture && ( 
+          <button onClick={nextSlide} className="arrow next">
+            <img src={arrowSlider} alt="Next" />
+          </button>
+        )}
 
-        <div className="counter">
-          {currentIndex + 1} / {pictures.length}
-        </div>
+        {!isOnePicture && ( 
+          <div className="counter">
+            {currentIndex + 1} / {pictures.length}
+          </div>
+        )}
 
       </div>
-
     </div>
   );
 }
