@@ -5,67 +5,70 @@
   flex-direction: column;
   width: 100%;
   box-sizing: border-box;
-}
 
-.topbar {
-  display: flex;
-  background-color: #ff6060;
-  color: white;
-  font-size: 24px;
-  font-weight: 700;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  align-items: center;
-  justify-content: space-between;
-
-  @include tablet {
-    font-size: 17px;
+  .topbar {
+    display: flex;
+    background-color: #ff6060;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
   }
 
-  @include mobile-max-width {
+  .collapse-button {
+    img {
+      width: 20px;
+      height: 20px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+
+  .collapse-icon {
+    transition: transform 0.3s ease;
+  }
+
+  .collapsed {
+    transform: rotate(180deg);
+  }
+
+  .collapse-content {
+    background-color: #f6f6f6;
+    border-radius: 0 0 5px 5px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 19px 20px;
+    transition: opacity 0.3s ease;
+    position: relative;
+    height: 100%;
+
+    .hidden {
+      opacity: 0;
+    }
+  }
+}
+
+/****** Media queries ***********/
+@media (min-width: $small) {
+  .topbar {
     font-size: 13px;
   }
 
-}
-
-.collapse-button {
-  img {
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
-    cursor: pointer;
-  }
-}
-
-.collapse-icon {
-  transition: transform 0.3s ease;
-}
-
-.collapsed {
-  transform: rotate(180deg);
-}
-
-.collapse-content {
-  background-color: #F6F6F6;
-  //background-color: aqua;
-  border-radius: 0 0 5px 5px;
-  font-size: 18px;
-  font-weight: 400;
-  padding: 19px 20px;
-  transition: opacity 0.3s ease;
-  position: relative; 
-
-  .hidden {
-    opacity: 0;
-  }
-
-  @include tablet {
-    font-size: 18px;
-  }
-
-  @include mobile-max-width {
+  .collapse-content {
     font-size: 12px;
   }
+}
 
+@media (min-width: $large) {
+  .topbar {
+    font-size: 17px;
+  }
+
+  .collapse-content {
+    font-size: 18px;
+  }
 }
