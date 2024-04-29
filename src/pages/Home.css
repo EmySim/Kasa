@@ -1,6 +1,6 @@
 .card-container {
   display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   max-width: 1240px;
   width: 100%;
   box-sizing: border-box;
@@ -9,16 +9,4 @@
   padding: 56px 50px 43px;
   background-color: #f6f6f6;
   border-radius: 25px;
-}
-
-@media (min-width: 576px) {
-  .card-container {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
-  }
-}
-@media (min-width: 992px) {
-  .card-container {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
 }/*# sourceMappingURL=Home.css.map */

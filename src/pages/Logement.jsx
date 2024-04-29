@@ -9,7 +9,7 @@ import Details from "../components/Details/Details.jsx";
 import Stars from "../components/Stars/Stars.jsx";
 import Collapse from "../components/Collapse/Collapse.jsx";
 import Footer from "../components/Footer/Footer.jsx";
-import Erreur from './Erreur.jsx';
+import Erreur from "./Erreur.jsx";
 
 function Logement() {
   const { id } = useParams();
@@ -18,23 +18,13 @@ function Logement() {
   useEffect(() => {
     const selectedLogement = logementsData.find((item) => item.id === id);
     setLogement(selectedLogement);
-    // Console logs pour debugging
-    console.log(logementsData);
-    console.log(logementsData[0]);
-    console.log(logementsData[0].id);
-    console.log(logementsData[0].description);
-    console.log(logementsData[0].title);
-  }, [id]);
- 
-  if (!logement) {
-    return <Erreur />;
-  }
+  }, []);
 
-  return (
+  return logement ? (
     <div>
       <Header />
       <div className="logement-page-main-container">
-      {logement && (
+        {logement && (
           <Gallery cover={logement.cover} pictures={logement.pictures} />
         )}
 
@@ -69,13 +59,14 @@ function Logement() {
 
           <Collapse
             title="Equipements"
-            content={ logement && logement.equipments}
+            content={logement && logement.equipments}
           />
-
         </div>
       </div>
       <Footer />
     </div>
+  ) : (
+    <Erreur />
   );
 }
 

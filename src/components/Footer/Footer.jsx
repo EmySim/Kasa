@@ -9,7 +9,7 @@ function Footer() {
         <img src={logoFooter} alt="Logo Pied de page" />
       </div>
       <div>
-        <p>&copy; 2020 Kasa. All rights reserved</p>
+        <p>&copy; 2024 Kasa. All rights reserved</p>
       </div>
     </div>
   );

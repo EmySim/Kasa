@@ -52,7 +52,7 @@
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    color: #fff;
+    color: $color_1;
     font-size: 18px;
     font-weight: 500;
   }
@@ -66,8 +66,5 @@
 }
 
 @media (min-width: $large) {
-  .arrow,
-  .counter {
-    display: hidden; 
-  }
+  
 }

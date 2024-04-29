@@ -8,8 +8,8 @@
 
   .topbar {
     display: flex;
-    background-color: #ff6060;
-    color: white;
+    background-color: $background-color_1;
+    color: $color_1;
     font-size: 24px;
     font-weight: 700;
     border: none;
@@ -27,7 +27,6 @@
       cursor: pointer;
     }
   }
-  
 
   &-icon {
     transition: transform 0.3s ease;
@@ -39,7 +38,7 @@
   }
 
   &-content {
-    background-color: #f6f6f6;
+    background-color: $background-color_2;
     border-radius: 0 0 5px 5px;
     font-size: 18px;
     font-weight: 400;
@@ -61,7 +60,6 @@
       padding: 20px;
       transform: translateY(0px);
     }
-
   }
 }
 

@@ -13,12 +13,10 @@ function Header() {
           </NavLink>
         </div>
 
-      <div>
         <nav className='nav'>
           <NavLink to = {"/"}  activeclassname="active">Accueil</NavLink>
           <NavLink to = {"/a-propos/"}  activeclassname="active">A Propos</NavLink>
         </nav>
-      </div>
     </div>
   );
 }

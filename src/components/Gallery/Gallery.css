@@ -44,18 +44,12 @@
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  color: #fff;
+  color: white;
   font-size: 18px;
   font-weight: 500;
 }
 
 @media (min-width: 576px) {
-  .arrow,
-  .counter {
-    display: hidden;
-  }
-}
-@media (min-width: 992px) {
   .arrow,
   .counter {
     display: hidden;

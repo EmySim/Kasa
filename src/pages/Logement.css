@@ -15,31 +15,11 @@
   font-size: 36px;
   font-weight: 500;
 }
-@media (min-width: 576px) {
-  .logement-page-main-container .title-logement {
-    font-size: 18px;
-  }
-}
-@media (min-width: 992px) {
-  .logement-page-main-container .title-logement {
-    font-size: 27px;
-  }
-}
 .logement-page-main-container .location {
-  color: #000;
+  color: black;
   font-size: 18px;
   font-weight: 500;
   margin: 0px;
-}
-@media (min-width: 576px) {
-  .logement-page-main-container .location {
-    font-size: 14px;
-  }
-}
-@media (min-width: 992px) {
-  .logement-page-main-container .location {
-    font-size: 16px;
-  }
 }
 .logement-page-main-container .tag-container {
   display: flex;
@@ -49,27 +29,35 @@
 }
 .logement-page-main-container .collapse-container-flat {
   display: flex;
+  flex-direction: column;
   padding-bottom: 50px;
   gap: 76px;
 }
+.logement-page-main-container ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
 @media (min-width: 576px) {
+  .logement-page-main-container .title-logement {
+    font-size: 18px;
+  }
+  .logement-page-main-container .location {
+    font-size: 14px;
+  }
   .logement-page-main-container .collapse-container-flat {
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
     margin: 27px;
     padding-bottom: 0px;
   }
 }
 @media (min-width: 992px) {
-  .logement-page-main-container .collapse-container-flat {
-    flex-direction: column;
-    gap: 20px;
-    padding-bottom: 0px;
-    margin: 27px;
+  .logement-page-main-container .title-logement {
+    font-size: 27px;
   }
-}
-.logement-page-main-container ul {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
+  .logement-page-main-container .location {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=Logement.css.map */

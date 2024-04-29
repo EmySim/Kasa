@@ -14,32 +14,16 @@
   }
 
   .title-logement {
-    color: #ff6060;
+    color: $color_2;
     font-size: 36px;
     font-weight: 500;
-
-    @media (min-width: $small) {
-      font-size: 18px;
-    }
-
-    @media (min-width: $large) {
-      font-size: 27px;
-    }
   }
 
   .location {
-    color: #000;
+    color: $color_3;
     font-size: 18px;
     font-weight: 500;
     margin: 0px;
-
-    @media (min-width: $small) {
-      font-size: 14px;
-    }
-
-    @media (min-width: $large) {
-      font-size: 16px;
-    }
   }
 
   .tag-container {
@@ -51,27 +35,41 @@
 
   .collapse-container-flat {
     display: flex;
+    flex-direction: column;
     padding-bottom: 50px;
     gap: 76px;
-
-    @media (min-width: $small) {
-      flex-direction: column;
-      gap: 20px;
-      margin: 27px;
-      padding-bottom: 0px;
-    }
-
-    @media (min-width: $large) {
-      flex-direction: column;
-      gap: 20px;
-      padding-bottom: 0px;
-      margin: 27px;
-    }
   }
 
   ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
+  }
+}
+
+@media (min-width: $small) {
+  .logement-page-main-container {
+    .title-logement {
+      font-size: 18px;
+    }
+    .location {
+      font-size: 14px;
+    }
+    .collapse-container-flat {
+      flex-direction: row;
+      gap: 20px;
+      margin: 27px;
+      padding-bottom: 0px;
+    }
+  }
+}
+@media (min-width: $large) {
+  .logement-page-main-container {
+    .title-logement {
+      font-size: 27px;
+    }
+    .location {
+      font-size: 16px;
+    }
   }
 }

@@ -9,7 +9,7 @@
 
   .overlay {
     position: absolute;
-    color: white;
+    color: $color_1;
   }
 
   img {
@@ -31,9 +31,5 @@
 }
 
 @media (min-width: $large) {
-  .banner {
-    width: 100%;
-    height: 111px;
-    margin-bottom: 22px;
-  }
+  
 }
