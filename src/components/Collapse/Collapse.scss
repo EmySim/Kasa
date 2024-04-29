@@ -19,7 +19,7 @@
     justify-content: space-between;
   }
 
-  .collapse-button {
+  &-button {
     img {
       width: 20px;
       height: 20px;
@@ -27,28 +27,41 @@
       cursor: pointer;
     }
   }
+  
 
-  .collapse-icon {
+  &-icon {
     transition: transform 0.3s ease;
+    cursor: pointer;
   }
 
   .collapsed {
     transform: rotate(180deg);
   }
 
-  .collapse-content {
+  &-content {
     background-color: #f6f6f6;
     border-radius: 0 0 5px 5px;
     font-size: 18px;
     font-weight: 400;
     padding: 19px 20px;
-    transition: opacity 0.3s ease;
-    position: relative;
+    transition: height 0.1s ease, opacity 0.1s ease, transform 0.3s ease;
     height: 100%;
+    z-index: -1;
 
-    .hidden {
+    &.hidden {
       opacity: 0;
+      height: 0;
+      padding: 0;
+      transform: translateY(-20px);
     }
+
+    &.open {
+      opacity: 1;
+      height: 100%;
+      padding: 20px;
+      transform: translateY(0px);
+    }
+
   }
 }
 

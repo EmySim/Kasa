@@ -17,7 +17,7 @@ function Home() {
   }, []); // Les crochets vides [] assurent que useEffect s'exécute une seule fois après le montage du composant
 
   return (
-    <div>
+    <div className="main-container">
       <Header />
       <Banner
         backgroundImage={bannerHome}

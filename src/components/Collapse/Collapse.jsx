@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Collapse.css";
 import arrowCollapse from "../../assets/arrowCollapse.png";
 
-function Collapse({ title, content, }) {
+function Collapse({ title, content }) {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   const toggleCollapse = () => {
@@ -10,9 +10,7 @@ function Collapse({ title, content, }) {
   };
 
   return (
-
     <div className="collapse">
-
       <div className="topbar">
         {title}
         <img
@@ -23,24 +21,19 @@ function Collapse({ title, content, }) {
         />
       </div>
 
-      {isCollapsed && (
-        <div className={`collapse-content ${isCollapsed ? "" : "hidden"}`}>
-       
-          {Array.isArray(content) ? (
-            <ul>
-              {content.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          ) : (
-            content 
-          )}
-        </div>
-      )}
+      <div className={`collapse-content ${isCollapsed ? "open" : "hidden"}`}>
+        {Array.isArray(content) ? (
+          <ul>
+            {content.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        ) : (
+          content
+        )}
+      </div>
     </div>
   );
 }
 
-export default Collapse; 
-
-
+export default Collapse;

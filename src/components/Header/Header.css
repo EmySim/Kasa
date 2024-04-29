@@ -34,21 +34,4 @@
   .logo-header img {
     height: 46px;
   }
-}
-@media (min-width: 992px) {
-  .header {
-    padding-top: 20px;
-    padding-bottom: 27px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .nav {
-    gap: 26px;
-  }
-  a {
-    gap: 12px;
-  }
-  .logo-header img {
-    height: 46px;
-  }
 }/*# sourceMappingURL=Header.css.map */
