@@ -8,7 +8,7 @@
 
   .topbar {
     display: flex;
-    background-color: $background-color_1;
+    background-color: $color_2;
     color: $color_1;
     font-size: 24px;
     font-weight: 700;
@@ -38,7 +38,7 @@
   }
 
   &-content {
-    background-color: $background-color_2;
+    background-color: $color_4;
     border-radius: 0 0 5px 5px;
     font-size: 18px;
     font-weight: 400;

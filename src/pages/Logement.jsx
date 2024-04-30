@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom"; // Importer useParams depuis react-router-dom
+import { useParams } from "react-router-dom"; 
 import logementsData from "../data/logements.json";
 import "./Logement.css";
 import Header from "../components/Header/Header.jsx";
@@ -18,17 +18,17 @@ function Logement() {
   useEffect(() => {
     const selectedLogement = logementsData.find((item) => item.id === id);
     setLogement(selectedLogement);
-  }, []);
+  }, [id]);
 
   return logement ? (
-    <div>
+    <div className="main-container">
       <Header />
       <div className="logement-page-main-container">
         {logement && (
           <Gallery cover={logement.cover} pictures={logement.pictures} />
         )}
 
-        {/*<div>ID: {id}</div> {/* Utiliser la valeur de l'ID récupérée */}
+
 
         <div className="flat-page-container">
           <div className="flat-page-container-left">

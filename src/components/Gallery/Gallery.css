@@ -50,8 +50,20 @@
 }
 
 @media (min-width: 576px) {
-  .arrow,
+  .arrow img {
+    width: 24px;
+    height: 24px;
+  }
   .counter {
-    display: hidden;
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .arrow img {
+    width: 100%;
+    height: 100%;
+  }
+  .counter {
+    display: block;
   }
 }/*# sourceMappingURL=Gallery.css.map */

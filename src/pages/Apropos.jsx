@@ -9,7 +9,7 @@ import "./Apropos.css";
 
 function Apropos() {
   return (
-    <div>
+    <div className="main-container">
       <Header />
       {<Banner backgroundImage={bannerApropos} />}
       <div className="collapse-container">
