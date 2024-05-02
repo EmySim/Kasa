@@ -8,11 +8,9 @@
   display: flex;
   background-color: #ff6060;
   color: white;
-  font-size: 24px;
   font-weight: 700;
   border: none;
   border-radius: 5px;
-  padding: 10px;
   align-items: center;
   justify-content: space-between;
 }
@@ -56,6 +54,9 @@
 @media (min-width: 576px) {
   .topbar {
     font-size: 13px;
+    padding-inline: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   .collapse-content {
     font-size: 12px;
@@ -63,7 +64,8 @@
 }
 @media (min-width: 992px) {
   .topbar {
-    font-size: 17px;
+    font-size: 24px;
+    padding: 10px;
   }
   .collapse-content {
     font-size: 18px;

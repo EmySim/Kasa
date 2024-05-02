@@ -5,20 +5,17 @@
 }
 #section-principale-404 h1 {
   color: #ff6060;
-  font-size: 96px;
   font-weight: 700;
   line-height: 142.6%;
   margin: 139px 0;
 }
 #section-principale-404 p {
   color: #ff6060;
-  font-size: 18px;
   font-weight: 500;
   line-height: 142.6%;
   margin: 0 0 139px;
 }
 #section-principale-404 a {
-  font-size: 14px;
   font-weight: 500;
   line-height: 142.6%;
   margin: 0 0 139px;
@@ -40,13 +37,13 @@
 }
 @media (min-width: 992px) {
   #section-principale-404 h1 {
-    font-size: 100px;
+    font-size: 288px;
   }
   #section-principale-404 p {
     display: block;
-    font-size: 27px;
+    font-size: 36px;
   }
   #section-principale-404 a {
-    font-size: 16px;
+    font-size: 18px;
   }
 }/*# sourceMappingURL=Erreur.css.map */

@@ -7,7 +7,6 @@
 
   h1 {
     color: $color_2;
-    font-size: 96px;
     font-weight: 700;
     line-height: 142.6%;
     margin: 139px 0;
@@ -15,14 +14,12 @@
 
   p {
     color: $color_2;
-    font-size: 18px;
     font-weight: 500;
     line-height: 142.6%;
     margin: 0 0 139px;
   }
 
   a {
-    font-size: 14px;
     font-weight: 500;
     line-height: 142.6%;
     margin: 0 0 139px;
@@ -50,16 +47,16 @@
 @media (min-width: $large) {
   #section-principale-404 {
     h1 {
-      font-size: 100px;
+      font-size: 288px;
     }
 
     p {
       display: block;
-      font-size: 27px;
+      font-size: 36px;
     }
 
     a {
-      font-size: 16px;
+      font-size: 18px;
     }
   }
 }

@@ -9,6 +9,7 @@ import "./Apropos.css";
 
 function Apropos() {
   return (
+    <div>
     <div className="main-container">
       <Header />
       {<Banner backgroundImage={bannerApropos} />}
@@ -16,6 +17,7 @@ function Apropos() {
         {valeurs.map((valeur, index) => (
           <Collapse key={index} title={valeur.title} content={valeur.content} />
         ))}
+      </div>
       </div>
       <Footer />
     </div>

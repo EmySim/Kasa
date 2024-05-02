@@ -1,3 +1,17 @@
 .star-icon {
   margin-right: 5px;
+  display: flex;
+}
+
+@media (min-width: 576px) {
+  .star-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media (min-width: 992px) {
+  .star-icon {
+    width: 36px;
+    height: 36px;
+  }
 }/*# sourceMappingURL=Stars.css.map */

@@ -1,16 +1,16 @@
 @import "../../variables.scss";
 
 .footer {
-  max-width: 1280px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: $color_3;
-  
+
   p {
     color: $color_1;
     padding-top: 28.56px;
-    padding-bottom: 29px;
+    //padding-bottom: 29px;
+    margin: 0px;
   }
 
   .logo-footer img {
@@ -18,5 +18,18 @@
   }
 }
 
+@media (min-width: $small) {
+  p {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding-bottom: 58px;
+  }
+}
 
-
+@media (min-width: $large) {
+  p {
+    display: block;
+    padding-bottom: 29px;
+  }
+}

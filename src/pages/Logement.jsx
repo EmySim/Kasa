@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom"; 
+import { useParams } from "react-router-dom";
 import logementsData from "../data/logements.json";
 import "./Logement.css";
 import Header from "../components/Header/Header.jsx";
@@ -21,46 +21,46 @@ function Logement() {
   }, [id]);
 
   return logement ? (
-    <div className="main-container">
-      <Header />
-      <div className="logement-page-main-container">
-        {logement && (
-          <Gallery cover={logement.cover} pictures={logement.pictures} />
-        )}
+    <div>
+      <div className="main-container">
+        <Header />
+        <div className="logement-page-main-container">
+          {logement && (
+            <Gallery cover={logement.cover} pictures={logement.pictures} />
+          )}
 
+          <div className="flat-page-container">
+            <div className="flat-page-container-left">
+              {logement && (
+                <>
+                  <h1 className="title-logement">{logement.title}</h1>
+                  <h2 className="location">{logement.location}</h2>
+                  <div className="tag-container">
+                    {logement.tags.map((tag, index) => (
+                      <Tag key={index} label={tag} />
+                    ))}
+                  </div>
+                </>
+              )}
+            </div>
 
-
-        <div className="flat-page-container">
-          <div className="flat-page-container-left">
-            {logement && (
-              <>
-                <h1 className="title-logement">{logement.title}</h1>
-                <h2 className="location">{logement.location}</h2>
-                <div className="tag-container">
-                  {logement.tags.map((tag, index) => (
-                    <Tag key={index} label={tag} />
-                  ))}
-                </div>
-              </>
-            )}
+            <div className="flat-page-container-right">
+              {logement && <Details host={logement.host} />}
+              <Stars rating={logement && parseInt(logement.rating)} />
+            </div>
           </div>
 
-          <div className="flat-page-container-right">
-            {logement && <Details host={logement.host} />}
-            <Stars rating={logement && parseInt(logement.rating)} />
+          <div className="collapse-container-flat">
+            <Collapse
+              title="Description"
+              content={logement && logement.description}
+            />
+
+            <Collapse
+              title="Equipements"
+              content={logement && logement.equipments}
+            />
           </div>
-        </div>
-
-        <div className="collapse-container-flat">
-          <Collapse
-            title="Description"
-            content={logement && logement.description}
-          />
-
-          <Collapse
-            title="Equipements"
-            content={logement && logement.equipments}
-          />
         </div>
       </div>
       <Footer />

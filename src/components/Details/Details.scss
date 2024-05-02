@@ -6,18 +6,36 @@
   align-items: center;
 
   .host-image {
-    width: 100px;
-    height: 100px;
     object-fit: cover;
     border-radius: 50%;
   }
 
   .host {
     color: $color_2;
-    font-size: 18px;
     font-weight: 500;
     max-width: 93px;
     word-wrap: break-word;
     text-align: right;
+  }
+}
+
+/****** Media queries ***********/
+@media (min-width: $small) {
+  .host-image {
+    width: 32px;
+    height: 32px;
+  }
+  .host {
+    font-size: 12px;
+  }
+}
+@media (min-width: $large) {
+  .host-image {
+    width: 64px;
+    height: 64px;
+  }
+
+  .host {
+    font-size: 18px;
   }
 }

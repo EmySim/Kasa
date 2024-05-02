@@ -1,5 +1,20 @@
 @import "../../variables.scss";
 
 .star-icon {
-      margin-right: 5px;
+  margin-right: 5px;
+  display: flex;
+}
+
+@media (min-width: $small) {
+  .star-icon {
+    width: 18px;
+    height: 18px;
   }
+}
+
+@media (min-width: $large) {
+  .star-icon {
+    width: 36px;
+    height: 36px;
+  }
+}

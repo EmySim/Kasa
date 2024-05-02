@@ -4,17 +4,34 @@
   align-items: center;
 }
 .detail-container .host-image {
-  width: 100px;
-  height: 100px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
 }
 .detail-container .host {
   color: #ff6060;
-  font-size: 18px;
   font-weight: 500;
   max-width: 93px;
   word-wrap: break-word;
   text-align: right;
+}
+
+/****** Media queries ***********/
+@media (min-width: 576px) {
+  .host-image {
+    width: 32px;
+    height: 32px;
+  }
+  .host {
+    font-size: 12px;
+  }
+}
+@media (min-width: 992px) {
+  .host-image {
+    width: 64px;
+    height: 64px;
+  }
+  .host {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=Details.css.map */

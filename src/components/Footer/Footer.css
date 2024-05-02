@@ -1,5 +1,4 @@
 .footer {
-  max-width: 1280px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,8 +7,23 @@
 .footer p {
   color: white;
   padding-top: 28.56px;
-  padding-bottom: 29px;
+  margin: 0px;
 }
 .footer .logo-footer img {
   padding-top: 66px;
+}
+
+@media (min-width: 576px) {
+  p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 58px;
+  }
+}
+@media (min-width: 992px) {
+  p {
+    display: block;
+    padding-bottom: 29px;
+  }
 }/*# sourceMappingURL=Footer.css.map */

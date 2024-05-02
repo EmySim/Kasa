@@ -1,9 +1,25 @@
 .collapse-container {
   display: flex;
   flex-direction: column;
+  max-width: 1023px;
   align-items: center;
   margin: auto;
   padding-top: 38px;
   padding-bottom: 38px;
   gap: 30px;
+}
+
+@media (min-width: 576px) {
+  .collapse-container {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    gap: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .collapse-container {
+    padding-top: 38px;
+    padding-bottom: 38px;
+    gap: 30px;
+  }
 }/*# sourceMappingURL=Apropos.css.map */

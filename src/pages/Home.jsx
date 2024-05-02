@@ -27,9 +27,9 @@ function Home() {
             />
           ))}
         </div>
-        <Footer />
+        
       </div>
-      
+      <Footer />
     </div>
   );
 }

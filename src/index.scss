@@ -2,7 +2,7 @@
 
 * {
   font-family: "Montserrat";
-  /*box-shadow: 0 0 0 1px red inset;*/
+  box-shadow: 0 0 0 1px red inset;
 }
 
 :root {
@@ -19,10 +19,10 @@ body,
 #root {
   margin: 0;
 
-  .main-container {
+  .main-container, .footer {
     max-width: 1280px;
     width: auto;
-    padding: 0 20px;
+    padding: 0 3.3%;
     margin: 0 auto;
   }
 }

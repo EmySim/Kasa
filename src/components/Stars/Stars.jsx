@@ -4,7 +4,6 @@ import starInactive from "../../assets/starInactive.png";
 import "./Stars.css";
 
 function Stars({ rating }) {
- 
   const stars = [];
   for (let i = 1; i <= 5; i++) {
     stars.push(
