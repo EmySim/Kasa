@@ -1,7 +1,6 @@
 .gallery-container {
   display: flex;
   justify-content: center;
-  height: 415px;
 }
 .gallery-container .gallery {
   display: flex;
@@ -51,10 +50,11 @@
 @media (min-width: 576px) {
   .gallery-container {
     padding-bottom: 15px;
+    height: 255px;
   }
   .arrow img {
-    width: 24px;
-    height: 24px;
+    width: 12px;
+    height: 20px;
   }
   .counter {
     display: none;
@@ -63,6 +63,7 @@
 @media (min-width: 992px) {
   .gallery-container {
     padding-bottom: 30px;
+    height: 415px;
   }
   .arrow img {
     width: 100%;

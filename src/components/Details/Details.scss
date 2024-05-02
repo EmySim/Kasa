@@ -13,7 +13,7 @@
   .host {
     color: $color_2;
     font-weight: 500;
-    max-width: 93px;
+
     word-wrap: break-word;
     text-align: right;
   }
@@ -27,6 +27,7 @@
   }
   .host {
     font-size: 12px;
+    max-width: 45px;
   }
 }
 @media (min-width: $large) {
@@ -37,5 +38,6 @@
 
   .host {
     font-size: 18px;
+    max-width: 93px;
   }
 }

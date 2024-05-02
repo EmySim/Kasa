@@ -2,7 +2,6 @@
 
 .tag {
   display: flex;
-  min-width: 115px;
   width: auto;
   height: 25px;
   justify-content: center;
@@ -10,21 +9,20 @@
   border-radius: 10px;
   background-color: $color_2;
   color: $color_1;
-  //font-size: 14px;
   font-weight: 500;
   padding: 0 16 px;
 }
 
 @media (min-width: $small) {
   .tag {
-    width: 84px;
+    min-width: 84px;
     font-size: 10px;
   }
 }
 
 @media (min-width: $large) {
   .tag {
-    width: 115px;
+    min-width: 115px;
     font-size: 14px;
   }
 }

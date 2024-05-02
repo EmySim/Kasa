@@ -26,9 +26,6 @@
 }
 .logement-page-main-container .collapse-container-flat {
   display: flex;
-  flex-direction: column;
-  padding-bottom: 50px;
-  gap: 76px;
 }
 .logement-page-main-container ul {
   list-style-type: none;
@@ -61,9 +58,9 @@
     align-items: center;
   }
   .collapse-container-flat {
-    display: flex;
+    flex-direction: column;
     gap: 20px;
-    margin: 20px 0 20px 0;
+    margin: 20px 0 27px 0;
     padding-bottom: 0px;
   }
 }
@@ -71,22 +68,24 @@
   .flat-page-container {
     flex-direction: row;
   }
-  .flat-page-container .title-logement {
+  .flat-page-container .flat-page-container-left .title-logement {
     font-size: 36px;
   }
-  .flat-page-container .location {
+  .flat-page-container .flat-page-container-left .location {
     font-size: 18px;
   }
-  .flat-page-container .tag-container {
+  .flat-page-container .flat-page-container-left .tag-container {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  .flat-page-container-right {
+  .flat-page-container .flat-page-container-right {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    align-content: flex-end;
   }
   .collapse-container-flat {
-    display: flex;
     flex-direction: row;
+    gap: 76px;
   }
 }/*# sourceMappingURL=Logement.css.map */

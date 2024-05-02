@@ -1,6 +1,5 @@
 .tag {
   display: flex;
-  min-width: 115px;
   width: auto;
   height: 25px;
   justify-content: center;
@@ -14,13 +13,13 @@
 
 @media (min-width: 576px) {
   .tag {
-    width: 84px;
+    min-width: 84px;
     font-size: 10px;
   }
 }
 @media (min-width: 992px) {
   .tag {
-    width: 115px;
+    min-width: 115px;
     font-size: 14px;
   }
 }/*# sourceMappingURL=Tag.css.map */

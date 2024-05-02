@@ -44,6 +44,7 @@
 @media (min-width: $large) {
   .header {
     padding: 40px 0px 50px;
+    justify-content: space-between;
 
     .nav {
       gap: 57px;

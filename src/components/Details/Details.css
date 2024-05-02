@@ -11,7 +11,6 @@
 .detail-container .host {
   color: #ff6060;
   font-weight: 500;
-  max-width: 93px;
   word-wrap: break-word;
   text-align: right;
 }
@@ -24,6 +23,7 @@
   }
   .host {
     font-size: 12px;
+    max-width: 45px;
   }
 }
 @media (min-width: 992px) {
@@ -33,5 +33,6 @@
   }
   .host {
     font-size: 18px;
+    max-width: 93px;
   }
 }/*# sourceMappingURL=Details.css.map */
