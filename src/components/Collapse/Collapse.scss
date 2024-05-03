@@ -10,11 +10,11 @@
     display: flex;
     background-color: $color_2;
     color: $color_1;
-    //font-size: 24px;
+    font-size: 13px;
     font-weight: 700;
     border: none;
     border-radius: 5px;
-   // padding: 10px;
+    padding: 0 10px;
     align-items: center;
     justify-content: space-between;
   }
@@ -40,7 +40,7 @@
   &-content {
     background-color: $color_4;
     border-radius: 0 0 5px 5px;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 400;
     padding: 19px 20px;
     transition: height 0.1s ease, opacity 0.1s ease, transform 0.3s ease;
@@ -63,19 +63,6 @@
   }
 }
 
-/****** Media queries ***********/
-@media (min-width: $small) {
-  .topbar {
-    font-size: 13px;
-    padding-inline: 10px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
-  .collapse-content {
-    font-size: 12px;
-  }
-}
 
 @media (min-width: $large) {
   .topbar {

@@ -21,7 +21,7 @@
   margin: 0 0 139px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   #section-principale-404 h1 {
     font-size: 96px;
   }

@@ -47,16 +47,16 @@
   font-weight: 500;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   .gallery-container {
     padding-bottom: 15px;
     height: 255px;
   }
-  .arrow img {
+  .gallery-container .arrow img {
     width: 12px;
     height: 20px;
   }
-  .counter {
+  .gallery-container .counter {
     display: none;
   }
 }

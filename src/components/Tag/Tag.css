@@ -7,19 +7,14 @@
   border-radius: 10px;
   background-color: #ff6060;
   color: white;
+  font-size: 10px;
   font-weight: 500;
-  padding: 0 16 px;
+  padding: 0 16px;
+  margin-top: 10px;
 }
 
 @media (min-width: 576px) {
   .tag {
-    min-width: 84px;
-    font-size: 10px;
-  }
-}
-@media (min-width: 992px) {
-  .tag {
-    min-width: 115px;
     font-size: 14px;
   }
 }/*# sourceMappingURL=Tag.css.map */

@@ -2,33 +2,44 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 27px;
+  padding-top: 20px;
+}
+.header .logo-header img {
+  width: 145px;
 }
 
 .nav {
   display: flex;
   font-weight: 500;
 }
+.nav a {
+  text-decoration: none;
+}
 .nav a.active, .nav a:hover {
   text-decoration: underline;
 }
 
+@media (max-width: 576px) {
+  .nav {
+    gap: 12px;
+  }
+  .nav a {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
 @media (min-width: 576px) {
   .header {
     padding-top: 20px;
-    padding-bottom: 27px;
     padding-left: 0px;
     padding-right: 0px;
   }
   .header .nav {
     gap: 26px;
   }
-  .header .nav a {
-    gap: 12px;
-    text-transform: uppercase;
-    font-size: 12px;
-  }
   .header .logo-header img {
-    height: 46px;
+    width: 210px;
   }
 }
 @media (min-width: 992px) {
@@ -42,8 +53,5 @@
   .header .nav a {
     text-transform: none;
     font-size: 24px;
-  }
-  .header .logo-header img {
-    height: 68px;
   }
 }/*# sourceMappingURL=Header.css.map */

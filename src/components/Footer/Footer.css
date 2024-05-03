@@ -13,7 +13,7 @@
   padding-top: 66px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   p {
     display: flex;
     flex-direction: column;

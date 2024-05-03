@@ -4,6 +4,9 @@
   align-items: center;
   position: relative;
 }
+.banner h1 {
+  padding: 10px 15px 10px 20px;
+}
 .banner .overlay {
   position: absolute;
   color: white;

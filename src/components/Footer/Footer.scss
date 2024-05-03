@@ -9,7 +9,6 @@
   p {
     color: $color_1;
     padding-top: 28.56px;
-    //padding-bottom: 29px;
     margin: 0px;
   }
 
@@ -18,7 +17,7 @@
   }
 }
 
-@media (min-width: $small) {
+@media (max-width: $small) {
   p {
     display: flex;
     flex-direction: column;

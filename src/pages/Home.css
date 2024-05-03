@@ -3,14 +3,15 @@
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   max-width: 1240px;
   width: 100%;
+  margin-top: 22px;
+  margin-bottom: 22px;
   box-sizing: border-box;
   gap: 20px;
 }
 
 /****** Media queries ***********/
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   .card-container {
-    margin-top: 20px;
     padding: 0px;
   }
 }
