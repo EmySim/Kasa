@@ -1,0 +1,56 @@
+@import "../../variables.scss";
+
+.detail-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  .host-image {
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .host {
+    color: $color_2;
+    font-weight: 500;
+    text-align: right;
+  }
+}
+
+/****** Media queries ***********/
+
+@media (max-width: $small) {
+  .host {
+    font-size: 12px;
+    max-width: 45px;
+  }
+
+  .host-image {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (min-width: $small) {
+  .host {
+    font-size: 12px;
+    max-width: 45px;
+  }
+
+  .host-image {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+@media (min-width: $large) {
+  .detail-container {
+    flex-wrap: wrap;
+    align-items: self-start;
+    .host {
+      font-size: 18px;
+      max-width: 93px;
+      margin-top: 0;
+    }
+  }
+}
