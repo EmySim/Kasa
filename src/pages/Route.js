@@ -3,23 +3,44 @@ import Home from './Home.jsx';
 import Logement from './Logement.jsx';
 import Erreur from './Erreur.jsx';
 import Apropos from './Apropos.jsx';
+import ScrollTop from '../components/Scrolltop.jsx';
 
 const routes = [
   {
     path: "/",
-    element: <Home />
+    element: (
+      <>
+        <ScrollTop />
+        <Home />
+      </>
+    )
   },
   {
     path: "/Logement/:id",
-    element: <Logement />
+    element: (
+      <>
+        <ScrollTop />
+        <Logement />
+      </>
+    )
   },
   {
     path: "/a-propos",
-    element: <Apropos />
+    element: (
+      <>
+        <ScrollTop />
+        <Apropos />
+      </>
+    )
   },
   {
     path: "*",
-    element: <Erreur />
+    element: (
+      <>
+        <ScrollTop />
+        <Erreur />
+      </>
+    )
   },
 ];
 
