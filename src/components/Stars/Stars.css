@@ -2,16 +2,23 @@
   gap: 5px;
   display: flex;
   justify-content: space-around;
+  padding-bottom: 31px;
 }
 
 @media (max-width: 576px) {
-  .star-icon {
+  .star-icon-container {
+    padding-bottom: 0;
+  }
+  .star-icon-container .star-icon {
     width: 18px;
     height: 18px;
   }
 }
 @media (min-width: 576px) {
-  .star-icon {
+  .star-icon-container {
+    padding-bottom: 31px;
+  }
+  .star-icon-container .star-icon {
     width: 36px;
     height: 36px;
   }

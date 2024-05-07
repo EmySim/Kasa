@@ -11,13 +11,15 @@
 .detail-container .host {
   color: #ff6060;
   font-weight: 500;
-  font-size: 12px;
   text-align: right;
-  max-width: 50px;
 }
 
 /****** Media queries ***********/
 @media (max-width: 576px) {
+  .host {
+    font-size: 12px;
+    max-width: 45px;
+  }
   .host-image {
     width: 32px;
     height: 32px;
@@ -34,8 +36,13 @@
   }
 }
 @media (min-width: 992px) {
-  .host {
+  .detail-container {
+    flex-wrap: wrap;
+    align-items: self-start;
+  }
+  .detail-container .host {
     font-size: 18px;
     max-width: 93px;
+    margin-top: 0;
   }
 }/*# sourceMappingURL=Details.css.map */

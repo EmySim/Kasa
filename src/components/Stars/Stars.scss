@@ -4,19 +4,26 @@
   gap: 5px;
   display: flex;
   justify-content: space-around;
-  
+  padding-bottom: 31px;
 }
 
 @media (max-width: $small) {
-  .star-icon {
-    width: 18px;
-    height: 18px;
+  .star-icon-container {
+    padding-bottom: 0;
+    .star-icon {
+      width: 18px;
+      height: 18px;
+    }
   }
 }
 
 @media (min-width: $small) {
-  .star-icon {
-    width: 36px;
-    height: 36px;
+  .star-icon-container {
+    padding-bottom: 31px;
+
+    .star-icon {
+      width: 36px;
+      height: 36px;
+    }
   }
 }

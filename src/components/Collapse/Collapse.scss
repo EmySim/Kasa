@@ -10,11 +10,10 @@
     display: flex;
     background-color: $color_2;
     color: $color_1;
-    font-size: 13px;
     font-weight: 700;
+
     border: none;
     border-radius: 5px;
-    padding: 0 10px;
     align-items: center;
     justify-content: space-between;
   }
@@ -63,6 +62,18 @@
   }
 }
 
+@media (max-width: $small) {
+  .topbar {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: $small) {
+  .topbar {
+    padding: 0 10px;
+  }
+}
 
 @media (min-width: $large) {
   .topbar {
@@ -72,5 +83,6 @@
 
   .collapse-content {
     font-size: 18px;
+    padding: 10px;
   }
 }
